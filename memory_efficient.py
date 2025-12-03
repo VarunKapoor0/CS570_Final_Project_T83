@@ -241,14 +241,14 @@ class MemoryEfficientSequenceAligner:
 
 # Time & memory utils
 
+
+
 def process_memory():
-    """
-    Return current process memory usage in KB, using RSS as reported by psutil.
-    """
+    # Return total memory (RSS) in kilobytes using psutil.
+
     process = psutil.Process()
-    memory_info = process.memory_info()
-    memory_consumed = int(memory_info.rss / 1024)
-    return memory_consumed
+    mem_bytes = process.memory_info().rss
+    return mem_bytes / 1024
 
 
 # Main
@@ -271,7 +271,7 @@ def main(input_path, output_path):
     after_mem = process_memory()
 
     time_ms = (end_time - start_time) * 1000.0
-    mem_kb = float(after_mem - before_mem)
+    mem_kb = process_memory()
 
     # 3. Write output to file: 5 lines in required format
     #    1. Cost of the alignment (Integer)
