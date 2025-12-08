@@ -1,0 +1,5 @@
+Cost: 168
+First alignment: CCAC_CAG_G
+Second Alignment: _CATGCA_TG
+Time: 0.07605552673339844
+Memory: 19216.0

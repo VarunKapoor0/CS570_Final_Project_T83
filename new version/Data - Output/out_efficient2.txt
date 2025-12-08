@@ -1,0 +1,5 @@
+Cost: 960
+First alignment: CTTCTCTTCTT__CTT__CCCTTCCT__CTT__CC__CTT__C__C__
+Second Alignment: C__C_C__C__GAC__GACCC__CC_GAC__GACCGAC__GACGACGA
+Time: 0.5381107330322266
+Memory: 18448.0
